@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert New Employee</title>
+</head>
+<body>
+<a href="viewusers.jsp">View All Records</a><br/>  
+<h1>Add New User</h1>  
+<form action="adduser.jsp" method="post">  
+<table>  
+<!-- <tr><td>id:</td><td>-->
+<!--<input type="text" name="id"/></td></tr> -->  
+<tr><td>Employee_code:</td><td>
+<input type="text" name="employee_code"/></td></tr>  
+<tr><td>Email_Id:</td><td>
+<input type="email_id" name="email_id"/></td></tr>  
+ <tr><td>Contact_No:</td><td>
+ <input type="contact_no" name="contact_no"/></td></tr>  
+ <tr><td>Reporting_Manager:</td><td>
+ <input type="text" name="reporting_manager"/></td></tr>  
+<!--  <tr><td>Status:</td><td><input type="text" name="Status"/></td></tr> -->
+<tr><td>Status:</td><td>  
+<select name="status" style="width:150px">  
+<option>active</option>  
+<option>resigned</option>  
+<option>Other</option>  
+</select>
+</td></tr>
+<tr><td>Date_Of_Joining(DD-MM-YYYY):</td><td>
+<input type="text" name="date_of_joining"/></td></tr>  
+<tr><td>Date_Of_Resigning(DD-MM-YYYY):</td><td>
+<input type="text" name="date_of_resigning"/></td></tr> 
+<tr><td colspan="2">
+<input type="submit" value="Add User"/></td></tr>  
+</table>  
+</form>  
+</body>
+</html>
